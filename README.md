@@ -1,52 +1,132 @@
-# Rushi Gujarathi — Portfolio (React + Vite + Framer Motion)
+# Rushi Gujarathi — Portfolio
 
-## Run it
+**A modern, responsive portfolio website showcasing projects, skills, and achievements.**
 
+Built with **React 18**, **Vite**, and **Framer Motion** for smooth animations and optimal performance.
+
+---
+
+## 🚀 Quick Start
+
+### Installation
 ```bash
 npm install
-npm run dev
 ```
 
-Then open the printed `localhost` URL. For a production build:
+### Development
+```bash
+npm run dev
+```
+Open the local URL (typically `http://localhost:5173`) in your browser.
 
+### Production Build
 ```bash
 npm run build
 npm run preview
 ```
 
-## Before it looks right, you need to add your assets
+---
 
-This environment doesn't have your actual photos, project files, or certificates — only
-your original `index.html`/`style.css`/`script.js`. The code below references them by
-path so nothing is lost, but you need to drop the real files in:
+## 📁 Project Structure
 
-- `public/images/` — your 5 hero photos, named `rushi-1.jpg` … `rushi-5.jpg`
-  (edit `src/data/content.js` → `profile.photos` if you'd rather keep your original filenames)
-- `public/favicon.png` and `public/og-cover.jpg` — new, optional, for the browser tab icon
-  and link-preview image
-- All the coursework/certificate files referenced in `src/data/content.js`
-  (`Diploma sem 3/…`, `Hack & Project PPT/…`, etc.) — copy your original folders into
-  `public/` so the relative links resolve exactly like they did before
+```
+portfolio-update/
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── Navbar.jsx      # Navigation header
+│   │   ├── Hero.jsx        # Hero section
+│   │   ├── About.jsx       # About section
+│   │   ├── Skills.jsx      # Skills section
+│   │   ├── Projects.jsx    # Projects section
+│   │   ├── Certifications.jsx  # Certifications
+│   │   ├── Contact.jsx     # Contact form
+│   │   ├── Footer.jsx      # Footer
+│   │   └── Reveal.jsx      # Scroll animation wrapper
+│   ├── data/
+│   │   └── content.js      # All portfolio content (editable)
+│   ├── styles/
+│   │   ├── global.css      # Global styles
+│   │   └── sections.css    # Section-specific styles
+│   ├── App.jsx            # Main app component
+│   └── main.jsx           # Entry point
+├── public/
+│   └── images/            # Your photos and assets
+├── index.html             # HTML template
+├── vite.config.js         # Vite configuration
+├── package.json           # Dependencies
+└── README.md              # This file
+```
 
-## What changed vs. the original site
+---
 
-- **Stack**: vanilla HTML/CSS/JS → React 18 + Vite + Framer Motion, per your instruction
-- **Fixed bugs**: hero image filename mismatch (`Rushi 4.jpg` vs `Rushi4.jpg`), inconsistent
-  photo filename casing, and the mobile nav that had no menu at all
-- **Projects**: split into a curated 5-project "Flagship" section (full case-study detail)
-  and a collapsible "Archive" section holding every diploma file, PPT, and degree project —
-  nothing was removed, just organized for a recruiter's 30–60 second scan
-- **New**: working hamburger menu, active-section nav indicator, SEO/OG meta tags, focus-visible
-  states everywhere, `rel="noopener noreferrer"` on all external links, `aria-hidden` on
-  decorative icons, a contact form with client-side validation
+## 🎨 Customization Guide
 
-## One honest limitation
+### Edit Your Content
+All portfolio content is centralized in **`src/data/content.js`**:
+- **Profile info**: name, roles, tagline, photos
+- **About cards**: your journey, vision, interests
+- **Skills**: programming languages, frameworks, tools
+- **Projects**: featured work and case studies
+- **Certifications**: awards and achievements
+- **Contact info**: email, social links
 
-The contact form validates input but there's no backend wired up — on submit it opens the
-visitor's email client pre-filled with their message (via `mailto:`), so messages still reach
-you, just without a hosted form endpoint. If you want true in-page submission without leaving
-the site, that needs a form service (e.g. Formspree) or a small serverless function — happy to
-wire that up if you want it.
+### Add Your Images
+1. Place your photos in `public/images/`
+2. Update paths in `src/data/content.js`
+3. Example: `'/images/your-photo.jpg'`
+
+### Add Favicon & OG Image
+- **Favicon**: `public/favicon.png` (browser tab icon)
+- **Social preview**: `public/og-cover.jpg` (for link sharing)
+
+---
+
+## ✨ Features
+
+✅ **Responsive Design** — Mobile, tablet, desktop  
+✅ **Smooth Animations** — Framer Motion scroll effects  
+✅ **SEO Optimized** — Meta tags, OG image, structured data  
+✅ **Accessibility** — WCAG standards, focus states, ARIA labels  
+✅ **Performance** — Vite fast refresh, optimized bundle  
+✅ **Contact Form** — Client-side validation with `mailto:` fallback  
+
+---
+
+## 🔧 Technology Stack
+
+| Category | Tools |
+|----------|-------|
+| **Frontend** | React 18, Vite, Framer Motion |
+| **Styling** | CSS3, Tailwind CSS |
+| **Icons** | Lucide React |
+| **Build** | Vite 5.3+ |
+| **Node** | v16+ recommended |
+
+---
+
+## 📝 Notes
+
+### Contact Form
+The contact form validates input client-side and uses `mailto:` to open the visitor's email client. For a hosted backend, integrate a form service like **Formspree** or deploy a serverless function.
+
+### Browser Support
+- Chrome, Edge, Firefox, Safari (latest versions)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## 📄 License
+
+Personal portfolio — feel free to use as a template.
+
+---
+
+## 💬 Questions?
+
+If you need help or want to add features:
+- Review `src/data/content.js` for content structure
+- Check `src/components/` for component details
+- Modify `src/styles/` for custom styling
 
 ## Note on this build
 
