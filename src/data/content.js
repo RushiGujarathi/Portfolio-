@@ -31,31 +31,24 @@ export const aboutCards = [
 export const skillGroups = [
   {
     label: 'Languages',
-    skills: ['Java', 'C', 'C++', 'JavaScript', 'Python'],
+    skills: ['Java', 'C', 'C++', 'JavaScript', 'Python', 'TypeScript'],
   },
   {
     label: 'Web & Frameworks',
-    skills: ['HTML5', 'CSS3', 'React', 'Angular', 'Bootstrap'],
+    skills: ['HTML5', 'CSS3', 'React', 'Angular', 'Bootstrap', 'Tailwind CSS'],
   },
   {
     label: 'Core Concepts',
-    skills: ['Object-Oriented Programming', 'Database Management Systems'],
+    skills: ['Object-Oriented Programming', 'Database Management Systems', 'Packet Tracer'],
   },
   {
     label: 'Data & AI',
-    skills: ['Machine Learning', 'MongoDB'],
+    skills: ['Machine Learning', 'Deep Learning', 'MLOps', 'MongoDB'],
   },
 ]
 
 // Exactly 5 flagship projects, shown in full detail.
 export const flagshipProjects = [
-  {
-    tag: 'Full-Stack',
-    title: 'Flight Route Optimization',
-    description: 'An algorithm and system for computing efficient flight routes, balancing distance, cost, and connection constraints across a graph of airports.',
-    features: ['Graph-based shortest/optimal path computation', 'Configurable cost & distance constraints', 'Route comparison output'],
-    link: 'https://github.com/RushiGujarathi/Portfolio-/tree/main/Degree%20Project/1.Flight-route-Optimization%20Done',
-  },
   {
     tag: 'Platform',
     title: 'Digital Alumni Platform',
@@ -69,13 +62,6 @@ export const flagshipProjects = [
     description: 'A machine-learning powered educational assistant that helps learners get targeted support based on their progress and needs.',
     features: ['ML-driven learning assistance', 'Personalized support', 'Education-focused AI application'],
     link: 'https://github.com/RushiGujarathi/Portfolio-/tree/main/Degree%20Project/12%20EDU_AI(ml)%20%20Done',
-  },
-  {
-    tag: 'Platform',
-    title: 'Pet-care Platform',
-    description: 'A platform dedicated to managing and improving pet care, connecting owners with the information and services their pets need.',
-    features: ['Pet profile & care tracking', 'Owner-facing dashboard', 'Care service coordination'],
-    link: 'https://github.com/RushiGujarathi/Portfolio-/tree/main/Degree%20Project/6%20Pet-care%20Done',
   },
   {
     tag: 'Rules Engine',
@@ -92,44 +78,44 @@ export const certifications = [
     title: 'Hackathon Achievements',
     desc: 'Certifications for participation in Odoo, Versanix, and Kaverai hackathons.',
     links: [
-      { label: 'Odoo Finalist', href: '/hack & industrial project certificate/oddo hackathon finalist.jpg' },
-      { label: 'Versanix (National)', href: '/hack & industrial project certificate/versanix hackathon cerficiate (national level).jpg' },
-      { label: 'Kaverai', href: '/hack & industrial project certificate/Kaverai Hack  cerfciate.pdf' },
+      { label: 'Odoo Finalist', href: '/images/oddo%20hackathon%20finalist.jpg' },
+      { label: 'Versanix (National)', href: '/images/versanix%20hackathon%20cerficiate%20(national%20level).jpg' },
+      { label: 'Kaverai', href: '/images/Kaverai%20Hack%20%20cerfciate.pdf' },
     ],
   },
   {
     title: 'Industrial Project — Policy Rule Engine',
     desc: 'Industrial project certification for the policy rule evaluation engine.',
-    links: [{ label: 'View Certificate', href: '/hack & industrial project certificate/Policy rule evulation engine  industrial project cerficiate.jpeg' }],
+    links: [{ label: 'View Certificate', href: '/images/Policy%20rule%20evulation%20engine%20%20industrial%20project%20cerficiate.jpeg' }],
   },
   {
     title: 'Research — Multimodal RAG',
     desc: 'Paper publication on Multimodal Retrieval-Augmented Generation.',
-    links: [{ label: 'View Paper', href: '/Paper and Petent publication of degree/multimodal_rag (1).pdf' }],
+    links: [{ label: 'View RAG Paper', href: '/images/multimodal_rag%20(1).pdf' }],
   },
   {
     title: 'Publication — IJARETY Research',
     desc: 'Diploma research paper published in IJARETY.',
     links: [
-      { label: 'View Paper', href: '/Diploma Activity/diploma IJARETY_Research paper.pdf' },
-      { label: 'Certificate', href: '/Diploma Activity/diploma Reserch Paper cerficiate.pdf' },
+      { label: 'View Paper', href: '/images/diploma%20IJARETY_Research%20paper.pdf' },
+      { label: 'Certificate', href: '/images/diploma%20Reserch%20Paper%20cerficiate.pdf' },
     ],
   },
   {
     title: 'Internship Activities',
     desc: 'Certifications from internship activities completed during the diploma.',
     links: [
-      { label: 'Certificate 1', href: '/Diploma Activity/diploma intership c1.jpeg' },
-      { label: 'Certificate 2', href: '/Diploma Activity/diploma intership c2.jpeg' },
-      { label: 'Certificate 3', href: '/Diploma Activity/diploma intership c3.jpeg' },
+      { label: 'Certificate 1', href: '/images/diploma%20intership%20c1.jpeg' },
+      { label: 'Certificate 2', href: '/images/diploma%20intership%20c2.jpeg' },
+      { label: 'Certificate 3', href: '/images/diploma%20intership%20c3.jpeg' },
     ],
   },
   {
     title: 'Academic Results',
     desc: 'Marksheets for Semester 3 and Semester 4.',
     links: [
-      { label: 'Sem 3 Result', href: '/Marksheet of degree/Sem_3 Result.pdf' },
-      { label: 'Sem 4 Result', href: '/Marksheet of degree/Sem_4 Result.pdf' },
+      { label: 'Sem 3 Result', href: '/images/Sem_3%20Result.pdf' },
+      { label: 'Sem 4 Result', href: '/images/Sem_4%20Result.pdf' },
     ],
   },
 ]
